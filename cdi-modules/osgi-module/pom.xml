@@ -1,0 +1,12 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>jee6-ejb-cdi-modules</artifactId>
+    <groupId>de.jamba.jee6</groupId>
+    <version>0.0.3-SNAPSHOT</version>
+  </parent>
+  <groupId>de.jamba.jee6</groupId>
+  <artifactId>jee6-ejb-cdi-osgi-module</artifactId>
+  <version>0.0.3-SNAPSHOT</version>
+  <packaging>osgi-bundle</packaging>
+</project>

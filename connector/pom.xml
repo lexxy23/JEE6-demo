@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>jee6-project</artifactId>
+    <groupId>de.jamba.jee6</groupId>
+    <version>0.0.4-SNAPSHOT</version>
+  </parent>
+  <artifactId>jee6-connector</artifactId>
+  <packaging>jar</packaging>
+  <name>FMD JEE6 JCA 1.6 (JSR 322)</name>
+  <dependencies>
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>de.jamba.jee6</groupId>
+      <artifactId>jee6-api</artifactId>
+      <version>0.0.4-SNAPSHOT</version>
+      <type>jar</type>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>

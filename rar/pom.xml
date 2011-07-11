@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>jee6-project</artifactId>
+    <groupId>de.jamba.jee6</groupId>
+    <version>0.0.4-SNAPSHOT</version>
+  </parent>
+  <artifactId>jee6-database</artifactId>
+  <name>FMD JEE6 Database configuration</name>
+  <packaging>rar</packaging>
+  <description>This project will provide a persistence layer.</description>
+  <dependencies>
+    <dependency>
+      <groupId>de.jamba.jee6</groupId>
+      <artifactId>jee6-connector</artifactId>
+      <version>0.0.4-SNAPSHOT</version>
+      <type>jar</type>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+  <build>
+      <!--
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-rar-plugin</artifactId>
+        <configuration>
+        </configuration>
+        <executions>
+          <execution>
+            <id>test</id>
+            <goals>
+              <goal>rar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+    -->
+  </build>
+</project>

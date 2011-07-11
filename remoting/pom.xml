@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>jee6-project</artifactId>
+    <groupId>de.jamba.jee6</groupId>
+    <version>0.0.4-SNAPSHOT</version>
+  </parent>
+  <groupId>de.jamba.jee6</groupId>
+  <artifactId>jee6-remoting</artifactId>
+  <version>0.0.4-SNAPSHOT</version>
+  <packaging>ejb</packaging>
+  <name>FMD JEE6 Remoting</name>
+  <description>The remote facade to work with the demo remotely.</description>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-ejb-plugin</artifactId>
+        <configuration>
+          <ejbVersion>3.0</ejbVersion>
+          <clientIncludes>
+            <clientInclude>de/jamba/jee6/ejb/api/**</clientInclude>
+          </clientIncludes>
+          <clientExcludes>
+            <clientExclude>de/jamba/jee6/ejb/impl/**</clientExclude>
+          </clientExcludes>
+          <generateClient>true</generateClient>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>de.jamba.jee6</groupId>
+      <artifactId>jee6-ejb31</artifactId>
+      <version>0.0.4-SNAPSHOT</version>
+      <type>ejb-client</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
+    </dependency>
+  </dependencies>
+</project>

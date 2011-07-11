@@ -1,0 +1,2 @@
+Manifest-Version: 1.0
+Class-Path: h2-1.2.140.jar;jee6-connector-0.0.3-SNAPSHOT.jar

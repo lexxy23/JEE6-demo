@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>jee6-project</artifactId>
+    <groupId>de.jamba.jee6</groupId>
+    <version>0.0.4-SNAPSHOT</version>
+  </parent>
+  <groupId>de.jamba.jee6</groupId>
+  <artifactId>jee6-ejb-cdi-modules</artifactId>
+  <version>0.0.4-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>FMD JEE6 CDI Modules</name>
+  <description>Some modules to inject into a running server.</description>
+  <modules>
+    <module>live-module</module>
+    <module>checkInjection</module>
+    <module>interceptor</module>
+  </modules>
+</project>
