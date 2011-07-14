@@ -3,12 +3,6 @@
  */
 package de.jamba.jee6.remoting.impl;
 
-import de.jamba.jee6.api.Address;
-import de.jamba.jee6.api.AddressRemoteService;
-import de.jamba.jee6.api.AddressService;
-import de.jamba.jee6.api.Country;
-import de.jamba.jee6.api.annotations.LogCall;
-import de.jamba.jee6.api.xml.AddressXml;
 
 import java.util.List;
 
@@ -17,6 +11,13 @@ import javax.ejb.Stateless;
 
 import javax.jws.WebParam;
 import javax.jws.WebService;
+
+import ext.demo.jee6.api.Address;
+import ext.demo.jee6.api.AddressRemoteService;
+import ext.demo.jee6.api.AddressService;
+import ext.demo.jee6.api.Country;
+import ext.demo.jee6.api.annotations.LogCall;
+import ext.demo.jee6.api.xml.AddressXml;
 
 /**
  * The implementation for remote service. The endpoint will be mounted under

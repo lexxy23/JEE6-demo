@@ -5,10 +5,11 @@
 
 package de.jamba.jee6.cdi;
 
-import de.jamba.jee6.api.Country;
-import de.jamba.jee6.api.ServerConfiguration;
 
 import javax.inject.Named;
+
+import ext.demo.jee6.api.Country;
+import ext.demo.jee6.api.ServerConfiguration;
 
 /**
  * @author  dstrauss

@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package de.jamba.jee6.api;
+package ext.demo.jee6.api;
 
 /**
  * A simple server config.

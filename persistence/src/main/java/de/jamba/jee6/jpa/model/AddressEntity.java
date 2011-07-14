@@ -3,8 +3,6 @@
  */
 package de.jamba.jee6.jpa.model;
 
-import de.jamba.jee6.api.Address;
-import de.jamba.jee6.api.Country;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,6 +11,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+
+import ext.demo.jee6.api.Address;
+import ext.demo.jee6.api.Country;
 
 /**
  * The address entity.

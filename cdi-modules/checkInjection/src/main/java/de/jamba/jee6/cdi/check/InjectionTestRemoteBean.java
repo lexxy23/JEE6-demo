@@ -3,8 +3,6 @@
  */
 package de.jamba.jee6.cdi.check;
 
-import de.jamba.jee6.api.ServerConfiguration;
-import de.jamba.jee6.api.annotations.LogCall;
 
 import javax.ejb.Stateless;
 
@@ -12,6 +10,9 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import javax.jws.WebService;
+
+import ext.demo.jee6.api.ServerConfiguration;
+import ext.demo.jee6.api.annotations.LogCall;
 
 /**
  * @author  dstrauss

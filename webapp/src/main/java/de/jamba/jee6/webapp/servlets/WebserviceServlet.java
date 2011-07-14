@@ -1,9 +1,5 @@
 package de.jamba.jee6.webapp.servlets;
 
-import de.jamba.jee6.api.AddressRemoteService;
-import de.jamba.jee6.api.Country;
-import de.jamba.jee6.api.annotations.LogCall;
-import de.jamba.jee6.api.xml.AddressXml;
 
 import java.util.List;
 
@@ -12,6 +8,11 @@ import javax.ejb.EJB;
 import javax.jws.WebService;
 
 import javax.servlet.annotation.WebServlet;
+
+import ext.demo.jee6.api.AddressRemoteService;
+import ext.demo.jee6.api.Country;
+import ext.demo.jee6.api.annotations.LogCall;
+import ext.demo.jee6.api.xml.AddressXml;
 
 /**
  * @author  dstrauss

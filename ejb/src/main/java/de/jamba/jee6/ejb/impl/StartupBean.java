@@ -5,7 +5,6 @@
 
 package de.jamba.jee6.ejb.impl;
 
-import de.jamba.jee6.api.ServerConfiguration;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -18,6 +17,8 @@ import javax.ejb.Startup;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+
+import ext.demo.jee6.api.ServerConfiguration;
 
 /**
  * Simple startup bean to check if we have the right configuration.

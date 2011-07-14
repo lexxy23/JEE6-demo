@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package de.jamba.jee6.api.annotations;
+package ext.demo.jee6.api.annotations;
 
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.ElementType.METHOD;

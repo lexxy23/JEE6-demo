@@ -3,7 +3,6 @@
  */
 package de.jamba.jee6.cdi.check;
 
-import de.jamba.jee6.api.ServerConfiguration;
 
 import java.util.logging.Logger;
 
@@ -14,6 +13,8 @@ import javax.ejb.Startup;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+
+import ext.demo.jee6.api.ServerConfiguration;
 
 /**
  * @author  dstrauss

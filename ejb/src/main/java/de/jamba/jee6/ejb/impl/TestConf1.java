@@ -7,9 +7,9 @@ import javax.enterprise.inject.Alternative;
 import javax.enterprise.inject.Produces;
 import javax.inject.Named;
 
-import de.jamba.jee6.api.Country;
-import de.jamba.jee6.api.ServerConfiguration;
-import de.jamba.jee6.api.annotations.DefaultCountry;
+import ext.demo.jee6.api.Country;
+import ext.demo.jee6.api.ServerConfiguration;
+import ext.demo.jee6.api.annotations.DefaultCountry;
 
 /**
  * @author dstrauss

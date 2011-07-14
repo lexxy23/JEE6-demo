@@ -3,7 +3,6 @@
  */
 package de.jamba.jee6.jpa.model;
 
-import de.jamba.jee6.api.Persistable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,6 +11,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+
+import ext.demo.jee6.api.Persistable;
 
 /**
  * The pulse entity.

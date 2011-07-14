@@ -3,7 +3,6 @@
  */
 package de.jamba.jee6.cdi.interceptors;
 
-import de.jamba.jee6.api.annotations.LogCall;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -11,6 +10,8 @@ import java.util.logging.Logger;
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
+
+import ext.demo.jee6.api.annotations.LogCall;
 
 /**
  * Interceptor for logging calls.

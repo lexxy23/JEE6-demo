@@ -1,14 +1,15 @@
 /**
  *
  */
-package de.jamba.jee6.api.xml;
+package ext.demo.jee6.api.xml;
 
-import de.jamba.jee6.api.Address;
-import de.jamba.jee6.api.Country;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
+
+import ext.demo.jee6.api.Address;
+import ext.demo.jee6.api.Country;
 
 /**
  * The xml version of an address.

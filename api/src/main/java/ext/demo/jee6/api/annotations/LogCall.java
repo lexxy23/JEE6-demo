@@ -1,7 +1,7 @@
 /**
  *
  */
-package de.jamba.jee6.api.annotations;
+package ext.demo.jee6.api.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;

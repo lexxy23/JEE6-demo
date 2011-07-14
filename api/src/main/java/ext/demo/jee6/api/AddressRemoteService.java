@@ -1,13 +1,14 @@
 /**
  *
  */
-package de.jamba.jee6.api;
+package ext.demo.jee6.api;
 
-import de.jamba.jee6.api.xml.AddressXml;
 
 import java.util.List;
 
 import javax.ejb.Local;
+
+import ext.demo.jee6.api.xml.AddressXml;
 
 /**
  * Service interface to remotely administer the address book.

@@ -3,9 +3,10 @@
  */
 package de.jamba.jee6.jpa.api;
 
-import de.jamba.jee6.api.Persistable;
 
 import javax.ejb.Local;
+
+import ext.demo.jee6.api.Persistable;
 
 /**
  * @author  dstrauss

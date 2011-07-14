@@ -3,8 +3,8 @@
  */
 package de.jamba.jee6.cdi.interceptors;
 
-import de.jamba.jee6.api.Country;
-import de.jamba.jee6.api.ServerConfiguration;
+import ext.demo.jee6.api.Country;
+import ext.demo.jee6.api.ServerConfiguration;
 
 /**
  * @author  dstrauss

@@ -3,9 +3,6 @@
  */
 package de.jamba.jee6.ejb.impl;
 
-import de.jamba.jee6.api.Address;
-import de.jamba.jee6.api.AddressService;
-import de.jamba.jee6.api.Country;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -20,6 +17,10 @@ import javax.ejb.Stateless;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+
+import ext.demo.jee6.api.Address;
+import ext.demo.jee6.api.AddressService;
+import ext.demo.jee6.api.Country;
 
 /**
  * Implementation for the AddressService.

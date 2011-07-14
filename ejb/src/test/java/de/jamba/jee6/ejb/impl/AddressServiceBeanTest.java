@@ -8,15 +8,16 @@ package de.jamba.jee6.ejb.impl;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-import de.jamba.jee6.api.Address;
-import de.jamba.jee6.api.AddressService;
-import de.jamba.jee6.api.Country;
 
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import ext.demo.jee6.api.Address;
+import ext.demo.jee6.api.AddressService;
+import ext.demo.jee6.api.Country;
 
 import java.io.File;
 import java.util.HashMap;

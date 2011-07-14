@@ -1,7 +1,7 @@
 /**
  *
  */
-package de.jamba.jee6.api;
+package ext.demo.jee6.api;
 
 import java.io.Serializable;
 

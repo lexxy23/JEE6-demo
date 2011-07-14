@@ -3,12 +3,13 @@
  */
 package de.jamba.jee6.jpa.impl;
 
-import de.jamba.jee6.api.Persistable;
-import de.jamba.jee6.api.annotations.LogCall;
 import de.jamba.jee6.jpa.api.PersistenceService;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import ext.demo.jee6.api.Persistable;
+import ext.demo.jee6.api.annotations.LogCall;
 
 import javax.annotation.PostConstruct;
 
