@@ -3,6 +3,6 @@
   <interceptors>
   </interceptors>
   <alternatives>
-    <class>de.jamba.jee6.ejb.impl.TestConf1</class>
+    <class>ext.demo.jee6.ejb.impl.TestConf1</class>
   </alternatives>
 </beans>

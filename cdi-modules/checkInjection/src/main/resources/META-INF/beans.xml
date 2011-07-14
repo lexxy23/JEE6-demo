@@ -4,12 +4,12 @@
 http://java.sun.com/xml/ns/javaee/beans_1_0.xsd">
   <!-- 
   <alternatives>
-    <class>de.jamba.jee6.cdi.check.AlternativeDefaultConfig</class>
+    <class>ext.demo.jee6.cdi.check.AlternativeDefaultConfig</class>
   </alternatives>
   -->
   <!-- 
   <interceptors>
-    <class>de.jamba.jee6.cdi.interceptors.LogCallInterceptor2</class>
+    <class>ext.demo.jee6.cdi.interceptors.LogCallInterceptor2</class>
   </interceptors>
   -->
 </beans>
