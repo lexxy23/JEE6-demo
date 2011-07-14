@@ -3,12 +3,10 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>jee6-ejb-cdi-modules</artifactId>
-    <groupId>de.jamba.jee6</groupId>
+    <groupId>ext.demo.jee6</groupId>
     <version>0.0.4-SNAPSHOT</version>
   </parent>
-  <groupId>de.jamba.jee6</groupId>
   <artifactId>jee6-ejb-cdi-interceptor</artifactId>
-  <version>0.0.4-SNAPSHOT</version>
   <name>FMD JEE6 CDI EJB Interceptors</name>
   <packaging>ejb</packaging>
   <dependencies>
@@ -17,7 +15,7 @@
       <artifactId>javaee-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>de.jamba.jee6</groupId>
+      <groupId>ext.demo.jee6</groupId>
       <artifactId>jee6-api</artifactId>
       <version>0.0.4-SNAPSHOT</version>
       <scope>compile</scope>

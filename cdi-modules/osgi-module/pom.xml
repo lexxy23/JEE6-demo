@@ -2,11 +2,9 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>jee6-ejb-cdi-modules</artifactId>
-    <groupId>de.jamba.jee6</groupId>
-    <version>0.0.3-SNAPSHOT</version>
+    <groupId>ext.demo.jee6</groupId>
+    <version>0.0.4-SNAPSHOT</version>
   </parent>
-  <groupId>de.jamba.jee6</groupId>
   <artifactId>jee6-ejb-cdi-osgi-module</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
   <packaging>osgi-bundle</packaging>
 </project>

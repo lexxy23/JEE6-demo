@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>jee6-project</artifactId>
-    <groupId>de.jamba.jee6</groupId>
+    <groupId>ext.demo.jee6</groupId>
     <version>0.0.4-SNAPSHOT</version>
   </parent>
   <artifactId>jee6-database</artifactId>
@@ -11,7 +11,7 @@
   <description>This project will provide a persistence layer.</description>
   <dependencies>
     <dependency>
-      <groupId>de.jamba.jee6</groupId>
+      <groupId>ext.demo.jee6</groupId>
       <artifactId>jee6-connector</artifactId>
       <version>0.0.4-SNAPSHOT</version>
       <type>jar</type>

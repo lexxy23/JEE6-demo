@@ -2,12 +2,10 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>jee6-project</artifactId>
-    <groupId>de.jamba.jee6</groupId>
+    <groupId>ext.demo.jee6</groupId>
     <version>0.0.4-SNAPSHOT</version>
   </parent>
-  <groupId>de.jamba.jee6</groupId>
   <artifactId>jee6-remoting</artifactId>
-  <version>0.0.4-SNAPSHOT</version>
   <packaging>ejb</packaging>
   <name>FMD JEE6 Remoting</name>
   <description>The remote facade to work with the demo remotely.</description>
@@ -19,10 +17,10 @@
         <configuration>
           <ejbVersion>3.0</ejbVersion>
           <clientIncludes>
-            <clientInclude>de/jamba/jee6/ejb/api/**</clientInclude>
+            <clientInclude>ext/demo/jee6/ejb/api/**</clientInclude>
           </clientIncludes>
           <clientExcludes>
-            <clientExclude>de/jamba/jee6/ejb/impl/**</clientExclude>
+            <clientExclude>ext/demo/jee6/ejb/impl/**</clientExclude>
           </clientExcludes>
           <generateClient>true</generateClient>
         </configuration>
@@ -31,7 +29,7 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>de.jamba.jee6</groupId>
+      <groupId>ext.demo.jee6</groupId>
       <artifactId>jee6-ejb31</artifactId>
       <version>0.0.4-SNAPSHOT</version>
       <type>ejb-client</type>

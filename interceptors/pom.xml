@@ -3,20 +3,18 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>jee6-project</artifactId>
-    <groupId>de.jamba.jee6</groupId>
+    <groupId>ext.demo.jee6</groupId>
     <version>0.0.4-SNAPSHOT</version>
   </parent>
-  <groupId>de.jamba.jee6</groupId>
   <artifactId>jee6-interceptors</artifactId>
   <name>FMD JEE6 Interceptors</name>
-  <version>0.0.4-SNAPSHOT</version>
   <dependencies>
     <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>de.jamba.jee6</groupId>
+      <groupId>ext.demo.jee6</groupId>
       <artifactId>jee6-api</artifactId>
       <version>0.0.4-SNAPSHOT</version>
       <type>jar</type>
@@ -39,7 +37,7 @@
         <version>2.1.0</version>
         <configuration>
           <instructions>
-            <Export-Package>de.jamba.jee6.interceptors</Export-Package>
+            <Export-Package>ext.demo.jee6.interceptors</Export-Package>
             <!--
             <Private-Package>org.foo.myproject.*</Private-Package>
             <Bundle-Activator>org.foo.myproject.impl1.Activator</Bundle-Activator>

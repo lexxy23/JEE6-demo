@@ -4,12 +4,10 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>jee6-project</artifactId>
-    <groupId>de.jamba.jee6</groupId>
+    <groupId>ext.demo.jee6</groupId>
     <version>0.0.4-SNAPSHOT</version>
   </parent>
-  <groupId>de.jamba.jee6</groupId>
   <artifactId>jee6-ear</artifactId>
-  <version>0.0.4-SNAPSHOT</version>
   <packaging>ear</packaging>
   <name>FMD JEE6 Enterprise Archive</name>
   <build>
@@ -22,12 +20,6 @@
           <defaultLibBundleDir>lib</defaultLibBundleDir>
           <version>6</version>
           <modules>
-            <!-- <rarModule> <groupId>de.jamba.jee6</groupId> <artifactId>jee6-database</artifactId> </rarModule> -->
-            <!-- <ejbModule> <groupId>de.jamba.jee6</groupId> <artifactId>jee6-persistence</artifactId> </ejbModule> <ejbModule> 
-              <groupId>de.jamba.jee6</groupId> <artifactId>jee6-ejb31</artifactId> </ejbModule> <ejbModule> <groupId>de.jamba.jee6</groupId> 
-              <artifactId>jee6-remoting</artifactId> </ejbModule> -->
-            <!-- <webModule> <groupId>de.jamba.jee6</groupId> <artifactId>jee6-webapp</artifactId> <contextRoot>/jee6Demo</contextRoot> 
-              </webModule> -->
           </modules>
           <jboss>
             <version>5</version>
@@ -45,45 +37,32 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>de.jamba.jee6</groupId>
+      <groupId>ext.demo.jee6</groupId>
       <artifactId>jee6-ejb-cdi-live-module</artifactId>
       <version>0.0.4-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>de.jamba.jee6</groupId>
+      <groupId>ext.demo.jee6</groupId>
       <artifactId>jee6-ejb-cdi-interceptor</artifactId>
       <version>0.0.4-SNAPSHOT</version>
       <type>ejb</type>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>de.jamba.jee6</groupId>
+      <groupId>ext.demo.jee6</groupId>
       <artifactId>jee6-ejb-cdi-checkInjection</artifactId>
       <version>0.0.4-SNAPSHOT</version>
       <type>ejb</type>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>de.jamba.jee6</groupId>
+      <groupId>ext.demo.jee6</groupId>
       <artifactId>jee6-persistence</artifactId>
       <version>0.0.4-SNAPSHOT</version>
       <type>ejb</type>
       <scope>compile</scope>
     </dependency>
-    <!-- 
-    <dependency>
-      <groupId>de.jamba.jee6</groupId>
-      <artifactId>jee6-ejb31</artifactId>
-      <version>0.0.4-SNAPSHOT</version>
-      <type>ejb</type>
-      <scope>compile</scope>
-    </dependency>
-    -->
-    <!-- <dependency> <groupId>de.jamba.jee6</groupId> <artifactId>jee6-remoting</artifactId> <version>0.0.4-SNAPSHOT</version> 
-      <type>ejb</type> <scope>compile</scope> </dependency> -->
-    <!-- <dependency> <groupId>de.jamba.jee6</groupId> <artifactId>jee6-webapp</artifactId> <version>0.0.3-SNAPSHOT</version> 
-      <type>war</type> <scope>compile</scope> </dependency> -->
   </dependencies>
   <properties>
     <netbeans.hint.deploy.server>gfv3ee6</netbeans.hint.deploy.server>
