@@ -1,7 +1,7 @@
 /**
  *
  */
-package de.jamba.jee6.jpa.api;
+package ext.demo.jee6.jpa.api;
 
 
 import javax.ejb.Local;

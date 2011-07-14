@@ -2,16 +2,16 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package de.jamba.jee6.jpa.impl;
+package ext.demo.jee6.jpa.impl;
 
-import de.jamba.jee6.jpa.api.PersistenceService;
-import de.jamba.jee6.jpa.api.PulseService;
-import de.jamba.jee6.jpa.model.PulseEntity;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import ext.demo.jee6.api.annotations.LogCall;
+import ext.demo.jee6.jpa.api.PersistenceService;
+import ext.demo.jee6.jpa.api.PulseService;
+import ext.demo.jee6.jpa.model.PulseEntity;
 
 import javax.annotation.PreDestroy;
 

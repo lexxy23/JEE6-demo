@@ -3,9 +3,10 @@
  */
 package de.jamba.jee6.ejb.impl;
 
-import de.jamba.jee6.jpa.api.PulseService;
 
 import javax.ejb.Stateless;
+
+import ext.demo.jee6.jpa.api.PulseService;
 
 /**
  * @author  dstrauss

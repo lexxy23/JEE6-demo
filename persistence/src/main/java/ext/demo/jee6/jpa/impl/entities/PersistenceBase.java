@@ -1,7 +1,7 @@
 /**
  *
  */
-package de.jamba.jee6.jpa.impl.entities;
+package ext.demo.jee6.jpa.impl.entities;
 
 import javax.persistence.Embeddable;
 

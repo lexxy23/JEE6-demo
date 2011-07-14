@@ -3,7 +3,6 @@
  */
 package de.jamba.jee6.ejb.impl;
 
-import de.jamba.jee6.jpa.api.PersistenceService;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,6 +11,7 @@ import javax.ejb.Singleton;
 import javax.ejb.Stateless;
 
 import ext.demo.jee6.api.Persistable;
+import ext.demo.jee6.jpa.api.PersistenceService;
 
 /**
  * @author  dstrauss

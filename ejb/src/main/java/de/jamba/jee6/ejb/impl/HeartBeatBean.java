@@ -3,10 +3,11 @@
  */
 package de.jamba.jee6.ejb.impl;
 
-import de.jamba.jee6.jpa.api.PulseService;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import ext.demo.jee6.jpa.api.PulseService;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;

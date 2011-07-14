@@ -1,7 +1,7 @@
 /**
  *
  */
-package de.jamba.jee6.jpa.model;
+package ext.demo.jee6.jpa.model;
 
 
 import javax.persistence.Column;
