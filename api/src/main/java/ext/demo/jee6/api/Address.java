@@ -6,7 +6,7 @@ package ext.demo.jee6.api;
 /**
  * Contract for a simple address.
  *
- * @author  dstrauss
+ * @author  dstrauss/maneumann
  */
 public interface Address extends Persistable {
 
