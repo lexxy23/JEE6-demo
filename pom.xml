@@ -13,6 +13,7 @@
   <scm>
     <connection>scm:git:git://github.com/lexxy23/JEE6-demo.git</connection>
     <developerConnection>scm:git:ssh://git@github.com:lexxy23/JEE6-demo.git</developerConnection>
+    <url>https://github.com/lexxy23/JEE6-demo/</url>
   </scm>
   <build>
     <plugins>
@@ -92,4 +93,8 @@
     <artifactId>jee-oss-parent</artifactId>
     <version>0.14</version>
   </parent>
+  <issueManagement>
+    <system>github</system>
+    <url>https://github.com/lexxy23/JEE6-demo/issues</url>
+  </issueManagement>
 </project>
