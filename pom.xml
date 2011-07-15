@@ -11,28 +11,11 @@
   <url>http://localhost/prj/jee6/</url>
   <inceptionYear>2010</inceptionYear>
   <scm>
-    <connection>scm:hg:file://${basedir}</connection>
-    <developerConnection>scm:hg:file://${basedir}</developerConnection>
+    <connection>scm:git:git://github.com/lexxy23/JEE6-demo.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:lexxy23/JEE6-demo.git</developerConnection>
   </scm>
-  <organization>
-    <name>Fox Mobile Distribution GmbH</name>
-    <url>http://www.foxmobile.com/</url>
-  </organization>
   <build>
     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
-          <deprecated>true</deprecated>
-          <optimize>true</optimize>
-          <debug>true</debug>
-          <showDeprecation>true</showDeprecation>
-          <showWarnings>true</showWarnings>
-        </configuration>
-      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
@@ -107,6 +90,6 @@
   <parent>
     <groupId>ds2.base.oss</groupId>
     <artifactId>jee-oss-parent</artifactId>
-    <version>0.14-SNAPSHOT</version>
+    <version>0.14</version>
   </parent>
 </project>
