@@ -86,7 +86,7 @@
   </dependencyManagement>
   <parent>
     <groupId>ds2.base.oss</groupId>
-    <artifactId>jee-oss-parent</artifactId>
+    <artifactId>jee-base</artifactId>
     <version>0.23</version>
   </parent>
   <issueManagement>
