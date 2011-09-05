@@ -17,7 +17,6 @@
   </scm>
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
-    <siteDeployBase>dav:https://dev.cerberus.ds2/mavenrepo</siteDeployBase>
     <siteDeployUrl>${siteDeployBase}/site/jee6Demo/${project.version}</siteDeployUrl>
   </properties>
   <modules>
@@ -58,11 +57,4 @@
     <system>github</system>
     <url>https://github.com/lexxy23/JEE6-demo/issues</url>
   </issueManagement>
-  <distributionManagement>
-    <site>
-      <id>ds2.sites2</id>
-      <name>DS/2 Project Sites</name>
-      <url>${siteDeployUrl}</url>
-    </site>
-  </distributionManagement>
 </project>
