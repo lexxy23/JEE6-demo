@@ -52,6 +52,8 @@
   </build>
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+    <siteDeployBase>dav:https://dev.cerberus.ds2/mavenrepo/</siteDeployBase>
+    <siteDeployUrl>${siteDeployBase}/site/jee6Demo/${project.version}</siteDeployUrl>
   </properties>
   <modules>
     <module>webapp</module>
@@ -82,16 +84,10 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-  <distributionManagement>
-    <site>
-      <id>local.doc</id>
-      <url>file://${basedir}/target/doc</url>
-    </site>
-  </distributionManagement>
   <parent>
     <groupId>ds2.base.oss</groupId>
     <artifactId>jee-oss-parent</artifactId>
-    <version>0.21</version>
+    <version>0.23</version>
   </parent>
   <issueManagement>
     <system>github</system>
