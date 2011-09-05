@@ -51,10 +51,17 @@
   <parent>
     <groupId>ds2.base.oss</groupId>
     <artifactId>jee-base</artifactId>
-    <version>0.23</version>
+    <version>0.24-SNAPSHOT</version>
   </parent>
   <issueManagement>
     <system>github</system>
     <url>https://github.com/lexxy23/JEE6-demo/issues</url>
   </issueManagement>
+  <distributionManagement>
+    <site>
+      <id>ds2.sites</id>
+      <name>DS/2 Project Documentations</name>
+      <url>${siteDeployUrl}</url>
+    </site>
+  </distributionManagement>
 </project>
