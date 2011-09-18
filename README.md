@@ -37,6 +37,6 @@ Add maven repository to your installation via your settings.xml:
 This enables a specific maven profile called awsDs2Profile in your maven builds. By default it's deactivated.
 On builds, you have to use
 
-mvn clean install -PawsDs2Profile
+    mvn clean install -PawsDs2Profile
 
 That will use your default repositories, plus the one mentioned above.
