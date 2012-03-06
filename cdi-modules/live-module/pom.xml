@@ -8,7 +8,7 @@
     <version>0.0.4-SNAPSHOT</version>
   </parent>
   <artifactId>jee6-ejb-cdi-live-module</artifactId>
-  <name>FMD JEE6 CDI Live Module</name>
+  <name>JD JEE6 CDI Live Module</name>
   <dependencies>
     <!-- <dependency> <groupId>org.apache.felix</groupId> <artifactId>org.osgi.core</artifactId> 
       <version>1.0.0</version> <scope>provided</scope> </dependency> -->

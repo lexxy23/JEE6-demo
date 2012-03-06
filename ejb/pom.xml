@@ -8,7 +8,7 @@
   </parent>
   <artifactId>jee6-ejb31</artifactId>
   <packaging>ejb</packaging>
-  <name>FMD JEE6 EJBs</name>
+  <name>JD JEE6 EJBs</name>
   <build>
     <plugins>
       <plugin>

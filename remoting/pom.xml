@@ -7,7 +7,7 @@
   </parent>
   <artifactId>jee6-remoting</artifactId>
   <packaging>ejb</packaging>
-  <name>FMD JEE6 Remoting</name>
+  <name>JD JEE6 Remoting</name>
   <description>The remote facade to work with the demo remotely.</description>
   <build>
     <plugins>

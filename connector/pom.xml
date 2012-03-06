@@ -7,7 +7,7 @@
   </parent>
   <artifactId>jee6-connector</artifactId>
   <packaging>jar</packaging>
-  <name>FMD JEE6 JCA 1.6 (JSR 322)</name>
+  <name>JD JEE6 JCA 1.6 (JSR 322)</name>
   <dependencies>
     <dependency>
       <groupId>javax</groupId>

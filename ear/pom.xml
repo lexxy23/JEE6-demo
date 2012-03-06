@@ -9,7 +9,7 @@
   </parent>
   <artifactId>jee6-ear</artifactId>
   <packaging>ear</packaging>
-  <name>FMD JEE6 Enterprise Archive</name>
+  <name>JD JEE6 Enterprise Archive</name>
   <build>
     <plugins>
       <plugin>

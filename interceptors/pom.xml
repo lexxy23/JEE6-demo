@@ -7,7 +7,7 @@
     <version>0.0.4-SNAPSHOT</version>
   </parent>
   <artifactId>jee6-interceptors</artifactId>
-  <name>FMD JEE6 Interceptors</name>
+  <name>JD JEE6 Interceptors</name>
   <dependencies>
     <dependency>
       <groupId>javax</groupId>

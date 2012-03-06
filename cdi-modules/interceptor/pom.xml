@@ -8,7 +8,7 @@
     <version>0.0.4-SNAPSHOT</version>
   </parent>
   <artifactId>jee6-ejb-cdi-interceptor</artifactId>
-  <name>FMD JEE6 CDI EJB Interceptors</name>
+  <name>JD JEE6 CDI EJB Interceptors</name>
   <packaging>ejb</packaging>
   <dependencies>
     <dependency>

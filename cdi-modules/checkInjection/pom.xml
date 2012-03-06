@@ -8,7 +8,7 @@
   </parent>
   <artifactId>jee6-ejb-cdi-checkInjection</artifactId>
   <packaging>ejb</packaging>
-  <name>FMD JEE6 CDI Injection Check</name>
+  <name>JD JEE6 CDI Injection Check</name>
   <build>
     <plugins>
       <plugin>

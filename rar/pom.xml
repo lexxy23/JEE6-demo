@@ -6,7 +6,7 @@
     <version>0.0.4-SNAPSHOT</version>
   </parent>
   <artifactId>jee6-database</artifactId>
-  <name>FMD JEE6 Database configuration</name>
+  <name>JD JEE6 Database configuration</name>
   <packaging>rar</packaging>
   <description>This project will provide a persistence layer.</description>
   <dependencies>

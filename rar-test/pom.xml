@@ -6,7 +6,7 @@
     <version>0.0.4-SNAPSHOT</version>
   </parent>
   <artifactId>rar-test</artifactId>
-  <name>FMD JEE6 Rar Test</name>
+  <name>JD JEE6 Rar Test</name>
   <packaging>ejb</packaging>
   <dependencies>
     <dependency>

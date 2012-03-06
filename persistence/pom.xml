@@ -7,7 +7,7 @@
   </parent>
   <artifactId>jee6-persistence</artifactId>
   <packaging>ejb</packaging>
-  <name>FMD JEE6 JPA2 Persistence</name>
+  <name>JD JEE6 JPA2 Persistence</name>
   <dependencies>
     <dependency>
       <groupId>ext.demo.jee6</groupId>
