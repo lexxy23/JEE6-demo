@@ -44,26 +44,12 @@
   </modules>
   <dependencyManagement>
     <dependencies>
-      <!-- 
-      <dependency>
-        <groupId>com.sun.faces</groupId>
-        <artifactId>jsf-api</artifactId>
-        <version>2.1.0-b02</version>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>com.sun.faces</groupId>
-        <artifactId>jsf-impl</artifactId>
-        <version>2.1.0-b02</version>
-        <scope>provided</scope>
-      </dependency>
-      -->
     </dependencies>
   </dependencyManagement>
   <parent>
     <groupId>ds2.base.oss</groupId>
     <artifactId>jee-base</artifactId>
-    <version>0.45</version>
+    <version>0.51</version>
   </parent>
   <issueManagement>
     <system>github</system>
