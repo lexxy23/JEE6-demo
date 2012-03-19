@@ -24,7 +24,7 @@
           <jboss>
             <version>5</version>
             <library-directory>lib</library-directory>
-            <module-order>strict</module-order>
+            <!-- module-order>strict</module-order-->
           </jboss>
         </configuration>
       </plugin>
