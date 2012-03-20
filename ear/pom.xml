@@ -63,6 +63,27 @@
       <type>ejb</type>
       <scope>compile</scope>
     </dependency>
+    <dependency>
+      <groupId>ext.demo.jee6</groupId>
+      <artifactId>jee6-webapp</artifactId>
+      <version>0.0.4-SNAPSHOT</version>
+      <type>war</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>ext.demo.jee6</groupId>
+      <artifactId>jee6-remoting</artifactId>
+      <version>0.0.4-SNAPSHOT</version>
+      <type>ejb</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>ext.demo.jee6</groupId>
+      <artifactId>jee6-ejb31</artifactId>
+      <version>0.0.4-SNAPSHOT</version>
+      <type>ejb</type>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
   <properties>
     <netbeans.hint.deploy.server>gfv3ee6</netbeans.hint.deploy.server>
