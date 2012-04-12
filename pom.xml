@@ -6,7 +6,7 @@
   <artifactId>jee6-project</artifactId>
   <version>0.0.4-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>FMD JEE6 Project</name>
+  <name>JD JEE6 Project</name>
   <description>Simple project to present some JEE6 features.</description>
   <url>https://github.com/lexxy23/JEE6-demo/</url>
   <inceptionYear>2010</inceptionYear>
