@@ -7,7 +7,7 @@
   </parent>
   <artifactId>jee6-ejb-cdi-modules</artifactId>
   <packaging>pom</packaging>
-  <name>FMD JEE6 CDI Modules</name>
+  <name>JD JEE6 CDI Modules</name>
   <description>Some modules to inject into a running server.</description>
   <modules>
     <module>live-module</module>
