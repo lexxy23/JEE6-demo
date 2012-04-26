@@ -22,7 +22,7 @@
           <clientExcludes>
             <clientExclude>ext/demo/jee6/ejb/impl/**</clientExclude>
           </clientExcludes>
-          <generateClient>true</generateClient>
+          <generateClient>false</generateClient>
         </configuration>
       </plugin>
     </plugins>
@@ -44,7 +44,7 @@
       <groupId>ext.demo.jee6</groupId>
       <artifactId>jee6-persistence</artifactId>
       <version>0.0.4-SNAPSHOT</version>
-      <type>ejb-client</type>
+      <type>ejb</type>
       <scope>compile</scope>
     </dependency>
   </dependencies>
