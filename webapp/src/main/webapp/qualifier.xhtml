@@ -40,6 +40,13 @@
 		<h:outputText value="#{mareksRunningShoeBean.trailShoe}" /><br/>
 		<b>Street shoe: </b>
 		<h:outputText value="#{mareksRunningShoeBean.streetShoe}" /><br/>
+		
+		<br/>
+		
+		<h:form>
+            <h:commandButton value="Checkout!" action="#{mareksRunningShoeBean.checkout}"/>
+        </h:form>
+		
     </h:body>
 </html>
 
