@@ -22,9 +22,7 @@
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-entitymanager</artifactId>
-      <version>3.4.0.GA</version>
-      <type>jar</type>
-      <scope>provided</scope>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -49,7 +47,7 @@
           <clientExcludes>
             <clientExclude>ext/demo/jee6/jpa/impl/**</clientExclude>
           </clientExcludes>
-          <generateClient>true</generateClient>
+          <generateClient>false</generateClient>
         </configuration>
       </plugin>
     </plugins>

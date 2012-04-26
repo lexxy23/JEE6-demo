@@ -22,7 +22,7 @@
           <clientExcludes>
             <clientExclude>ext/demo/jee6/ejb/impl/**</clientExclude>
           </clientExcludes>
-          <generateClient>true</generateClient>
+          <generateClient>false</generateClient>
         </configuration>
       </plugin>
     </plugins>

@@ -10,6 +10,7 @@
   <packaging>war</packaging>
   <name>JD JEE6 Webapp</name>
   <description>The frontend.</description>
+  <!--
   <repositories>
     <repository>
       <url>http://download.java.net/maven/2/</url>
@@ -18,6 +19,7 @@
       <name>Repository for library Library[jsf20]</name>
     </repository>
   </repositories>
+  -->
   <dependencies>
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -42,15 +44,13 @@
       <groupId>ext.demo.jee6</groupId>
       <artifactId>jee6-ejb31</artifactId>
       <version>0.0.4-SNAPSHOT</version>
-      <type>ejb-client</type>
-      <scope>compile</scope>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>ext.demo.jee6</groupId>
       <artifactId>jee6-api</artifactId>
       <version>0.0.4-SNAPSHOT</version>
-      <type>jar</type>
-      <scope>compile</scope>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
   <properties>

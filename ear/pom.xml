@@ -83,6 +83,12 @@
       <type>ejb</type>
       <scope>compile</scope>
     </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>jee6-rs-v1</artifactId>
+      <version>${project.version}</version>
+      <type>war</type>
+    </dependency>
   </dependencies>
   <properties>
     <netbeans.hint.deploy.server>gfv3ee6</netbeans.hint.deploy.server>
