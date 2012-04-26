@@ -41,6 +41,8 @@
     <module>api</module>
     <module>persistence</module>
     <module>remoting</module>
+    <module>rs</module>
+    <module>notify</module>
   </modules>
   <dependencyManagement>
     <dependencies>

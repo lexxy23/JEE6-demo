@@ -47,6 +47,9 @@ import javax.validation.constraints.NotNull;
 import ext.demo.jee6.api.Address;
 import ext.demo.jee6.api.AddressService;
 import ext.demo.jee6.api.Country;
+import ext.demo.jee6.jpa.api.PersistenceService;
+import ext.demo.jee6.jpa.model.AddressEntity;
+import javax.inject.Inject;
 
 /**
  * Implementation for the AddressService.
@@ -71,6 +74,8 @@ public class AddressServiceBean implements AddressService {
      */
     @Resource(mappedName = "jee6/env")
     private String env;
+    @EJB
+    private PersistenceService svc;
 
     /**
      * Inits the bean.
@@ -97,8 +102,9 @@ public class AddressServiceBean implements AddressService {
             String str, @NotNull
             String zc, @NotNull
             String city, Country c) {
-        // TODO Auto-generated method stub
-        return null;
+      AddressEntity e=new AddressEntity();
+      Address a=svc.store(e);
+        return a;
     }
 
     /**
@@ -139,4 +145,9 @@ public class AddressServiceBean implements AddressService {
     public void deleteAddress(long id) {
         // TODO Auto-generated method stub
     }
+
+  @Override
+  public List<Address> getAllAddresses() {
+    return null;
+  }
 }

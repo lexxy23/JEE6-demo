@@ -3,3 +3,6 @@
 target
 .classpath
 .checkstyle
+/persistence/nbproject/
+/ejb/nbproject/
+/rs/nbproject/
