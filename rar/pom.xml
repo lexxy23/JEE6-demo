@@ -3,7 +3,7 @@
   <parent>
     <artifactId>jee6-project</artifactId>
     <groupId>ext.demo.jee6</groupId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.0.4-gf-SNAPSHOT</version>
   </parent>
   <artifactId>jee6-database</artifactId>
   <name>JD JEE6 Database configuration</name>
@@ -13,7 +13,7 @@
     <dependency>
       <groupId>ext.demo.jee6</groupId>
       <artifactId>jee6-connector</artifactId>
-      <version>0.0.4-SNAPSHOT</version>
+      <version>0.0.4-gf-SNAPSHOT</version>
       <type>jar</type>
       <scope>compile</scope>
     </dependency>

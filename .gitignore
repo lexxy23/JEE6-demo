@@ -6,3 +6,4 @@ target
 /persistence/nbproject/
 /ejb/nbproject/
 /rs/nbproject/
+*.versionsBackup

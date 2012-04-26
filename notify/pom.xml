@@ -4,7 +4,7 @@
   <parent>
     <groupId>ext.demo.jee6</groupId>
     <artifactId>jee6-project</artifactId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.0.4-gf-SNAPSHOT</version>
   </parent>
   <name>JD JEE6 Notify Webfragment</name>
   <artifactId>jee6-notify-endpoint</artifactId>

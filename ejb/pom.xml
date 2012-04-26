@@ -4,7 +4,7 @@
   <parent>
     <artifactId>jee6-project</artifactId>
     <groupId>ext.demo.jee6</groupId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.0.4-gf-SNAPSHOT</version>
   </parent>
   <artifactId>jee6-ejb31</artifactId>
   <packaging>ejb</packaging>
@@ -43,7 +43,7 @@
     <dependency>
       <groupId>ext.demo.jee6</groupId>
       <artifactId>jee6-persistence</artifactId>
-      <version>0.0.4-SNAPSHOT</version>
+      <version>0.0.4-gf-SNAPSHOT</version>
       <type>ejb-client</type>
       <scope>provided</scope>
     </dependency>

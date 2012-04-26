@@ -3,7 +3,7 @@
   <parent>
     <artifactId>jee6-project</artifactId>
     <groupId>ext.demo.jee6</groupId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.0.4-gf-SNAPSHOT</version>
   </parent>
   <artifactId>jee6-persistence</artifactId>
   <packaging>ejb</packaging>
@@ -12,7 +12,7 @@
     <dependency>
       <groupId>ext.demo.jee6</groupId>
       <artifactId>jee6-api</artifactId>
-      <version>0.0.4-SNAPSHOT</version>
+      <version>0.0.4-gf-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>

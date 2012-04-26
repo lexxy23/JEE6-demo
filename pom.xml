@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ext.demo.jee6</groupId>
   <artifactId>jee6-project</artifactId>
-  <version>0.0.4-SNAPSHOT</version>
+  <version>0.0.4-gf-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>JD JEE6 Project</name>
   <description>Simple project to present some JEE6 features.</description>
