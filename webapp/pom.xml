@@ -36,7 +36,7 @@
     </dependency>
     <dependency>
       <groupId>javax</groupId>
-      <artifactId>javaee-api</artifactId>
+      <artifactId>javaee-web-api</artifactId>
     </dependency>
     <dependency>
       <groupId>ext.demo.jee6</groupId>
