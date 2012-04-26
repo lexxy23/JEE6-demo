@@ -44,8 +44,8 @@
       <groupId>ext.demo.jee6</groupId>
       <artifactId>jee6-persistence</artifactId>
       <version>0.0.4-SNAPSHOT</version>
-      <type>ejb</type>
-      <scope>compile</scope>
+      <type>ejb-client</type>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 </project>

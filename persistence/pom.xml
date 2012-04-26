@@ -47,7 +47,7 @@
           <clientExcludes>
             <clientExclude>ext/demo/jee6/jpa/impl/**</clientExclude>
           </clientExcludes>
-          <generateClient>false</generateClient>
+          <generateClient>true</generateClient>
         </configuration>
       </plugin>
     </plugins>
