@@ -1,5 +1,7 @@
 package ext.demo.jee6.cdi.qualifier;
 
+import java.util.logging.Logger;
+
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -11,7 +13,6 @@ public class MareksRunningShoeBean {
   private RunningShoe streetModel;
   private RunningShoe trailModel;
 
-  
   @Inject
   @StandardPrice
   private double standardPrice;
@@ -19,6 +20,8 @@ public class MareksRunningShoeBean {
   @Inject
   @TrailPrice
   private double trailPrice;
+
+  private static final Logger LOG = Logger.getLogger(MareksRunningShoeBean.class.getName());
   
   @Inject
   public MareksRunningShoeBean (@StreetShoe RunningShoe streetModel, @TrailShoe RunningShoe trailModel) {
