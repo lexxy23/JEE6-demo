@@ -27,4 +27,5 @@
 /**
  * Some API contracts for all JEE6 classes in this demo.
  */
+@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.dummy/ns/jee6/api")
 package ext.demo.jee6.api;

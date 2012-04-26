@@ -8,6 +8,7 @@
   </parent>
   <artifactId>jee6-interceptors</artifactId>
   <name>JD JEE6 Interceptors</name>
+  <description>This artifact contains only interceptors that can be bound on EJBs, CDI objects etc.</description>
   <dependencies>
     <dependency>
       <groupId>javax</groupId>
@@ -34,7 +35,6 @@
       <plugin>
         <groupId>org.apache.felix</groupId>
         <artifactId>maven-bundle-plugin</artifactId>
-        <version>2.1.0</version>
         <configuration>
           <instructions>
             <Export-Package>ext.demo.jee6.interceptors</Export-Package>
