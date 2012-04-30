@@ -9,7 +9,7 @@
   </parent>
   <artifactId>jee6-ejb-cdi-interceptor</artifactId>
   <name>JD JEE6 CDI EJB Interceptors</name>
-  <packaging>ejb</packaging>
+  <packaging>jar</packaging>
   <dependencies>
     <dependency>
       <groupId>org.slf4j</groupId>

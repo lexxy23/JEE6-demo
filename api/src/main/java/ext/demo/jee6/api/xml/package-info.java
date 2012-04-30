@@ -27,4 +27,6 @@
 /**
  * Package for all the xml transfer classes.
  */
+@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.dummy/ns/jee6")
 package ext.demo.jee6.api.xml;
+

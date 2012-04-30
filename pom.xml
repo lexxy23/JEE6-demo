@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>ext.demo.jee6</groupId>
   <artifactId>jee6-project</artifactId>
   <version>0.0.4-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>FMD JEE6 Project</name>
+  <name>JD JEE6 Project</name>
   <description>Simple project to present some JEE6 features.</description>
   <url>https://github.com/lexxy23/JEE6-demo/</url>
   <inceptionYear>2010</inceptionYear>
@@ -44,12 +44,18 @@
   </modules>
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>javax.validation</groupId>
+        <artifactId>validation-api</artifactId>
+        <version>1.0.0.GA</version>
+        <scope>provided</scope>
+      </dependency>
     </dependencies>
   </dependencyManagement>
   <parent>
     <groupId>ds2.base.oss</groupId>
     <artifactId>jee-base</artifactId>
-    <version>0.51</version>
+    <version>0.53</version>
   </parent>
   <issueManagement>
     <system>github</system>
@@ -62,4 +68,22 @@
       <url>${siteDeployUrl}</url>
     </site>
   </distributionManagement>
+  <profiles>
+    <profile>
+      <id>no-repo-man</id>
+      <repositories>
+        <repository>
+          <id>commondatastorage.google.ds2</id>
+          <releases>
+            <checksumPolicy>fail</checksumPolicy>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <url>https://commondatastorage.googleapis.com/ds2/mvn/oss/releases</url>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
 </project>

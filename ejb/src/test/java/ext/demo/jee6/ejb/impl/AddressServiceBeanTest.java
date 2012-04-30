@@ -34,16 +34,16 @@ package ext.demo.jee6.ejb.impl;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
+import ext.demo.jee6.api.Address;
+import ext.demo.jee6.api.AddressService;
+import ext.demo.jee6.api.Country;
+import ext.demo.jee6.jpa.model.AddressEntity;
 
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
-import ext.demo.jee6.api.Address;
-import ext.demo.jee6.api.AddressService;
-import ext.demo.jee6.api.Country;
 
 import java.io.File;
 import java.util.HashMap;
@@ -143,13 +143,14 @@ public class AddressServiceBeanTest {
     @Test
     public void testCreateEntry() throws Exception {
         LOG.info("createEntry");
-        String fn = "";
-        String sn = "";
-        String str = "";
-        String zc = "";
-        String city = "";
-        Country c = null;
-        Address expResult = null;
+        String fn = "Vorname";
+        String sn = "Nachname";
+        String str = "Strasse";
+        String zc = "12345";
+        String city = "Stadt";
+        Country c = Country.DE;
+        Address expResult = new AddressEntity();
+        expResult.setId(1);
         Address result = svc.createEntry(fn, sn, str, zc, city, c);
         assertEquals(expResult, result);
     }

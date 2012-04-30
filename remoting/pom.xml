@@ -22,7 +22,7 @@
           <clientExcludes>
             <clientExclude>ext/demo/jee6/ejb/impl/**</clientExclude>
           </clientExcludes>
-          <generateClient>true</generateClient>
+          <generateClient>false</generateClient>
         </configuration>
       </plugin>
     </plugins>
@@ -30,10 +30,9 @@
   <dependencies>
     <dependency>
       <groupId>ext.demo.jee6</groupId>
-      <artifactId>jee6-ejb31</artifactId>
+      <artifactId>jee6-api</artifactId>
       <version>0.0.4-SNAPSHOT</version>
-      <type>ejb-client</type>
-      <scope>compile</scope>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>javax</groupId>

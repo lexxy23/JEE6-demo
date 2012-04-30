@@ -71,7 +71,7 @@ public class LogCallInterceptor {
      */
     @AroundInvoke
     public Object logCall(InvocationContext ic) throws Exception {
-        Object rc = null;
+        Object rc;
         LOG.log(Level.WARNING, "Invoking method {0}", ic.getMethod().toGenericString());
         rc = ic.proceed();
         return rc;

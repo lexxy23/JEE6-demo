@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8' ?>
 <!--
 
     This is free and unencumbered software released into the public domain.
@@ -27,19 +27,26 @@
     For more information, please refer to <http://unlicense.org/>
 
 -->
-<!-- 
-    Document   : newjsp
-    Created on : 10.08.2010, 08:51:35
-    Author     : foxmobile
--->
-<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Running Shoe Service</title>
+    </h:head>
+    <h:body>
+        <h3><b>Qualifier annotations</b></h3>
+			Selected shoes:<br/>
+		<b>Trail shoe: </b>
+		<h:outputText value="#{mareksRunningShoeBean.trailShoe}" /><br/>
+		<b>Street shoe: </b>
+		<h:outputText value="#{mareksRunningShoeBean.streetShoe}" /><br/>
+		
+		<br/>
+		
+		<h:form>
+            <h:commandButton value="Checkout!" action="#{mareksRunningShoeBean.checkout}"/>
+        </h:form>
+		
+    </h:body>
+</html>
 
-    <jsp:directive.page contentType="text/html" pageEncoding="UTF-8"/>
-
-    <!-- any content can be specified here, e.g.: -->
-    <jsp:element name="text">
-        <jsp:attribute name="lang">EN</jsp:attribute>
-        <jsp:body>Hello World!</jsp:body>
-    </jsp:element>
-
-</jsp:root>
