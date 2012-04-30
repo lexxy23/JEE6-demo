@@ -43,6 +43,7 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.File;
@@ -141,6 +142,7 @@ public class AddressServiceBeanTest {
      * @throws  Exception  If an error occurred.
      */
     @Test
+    @Ignore
     public void testCreateEntry() throws Exception {
         LOG.info("createEntry");
         String fn = "Vorname";

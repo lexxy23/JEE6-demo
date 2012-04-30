@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:f="http://java.sun.com/jsf/core">
+        
+       
+        
+        <h:head>
+                <title>Address service</title>
+        </h:head>
+        
+        <h:body>
+                
+        
+                
+                <h:form>
+                        
+                        <h:panelGrid columns="2">
+                                <f:facet name="header">Address</f:facet>
+                                
+                                <h:outputLabel value="Id" rendered="#{!empty addressServiceBean.address.id}" />
+                                <h:outputLabel value="#{addressServiceBean.address.id}" rendered="#{!empty addressServiceBean.address.id}" />
+                                        
+                                <h:outputLabel for="firstName" value="First name" />
+                                <h:inputText id="firstName" value="#{addressServiceBean.address.forename}" label="First name" />
+                                
+                                <h:outputLabel for="lastName" value="Last name" />
+                                <h:inputText id="lastName" value="#{addressServiceBean.address.surename}" label="Last name"  />
+                                
+                                <h:outputLabel for="street" value="Street" />
+                                <h:inputText id="street" value="#{addressServiceBean.address.street}" label="Street" />
+                                
+                                <h:outputLabel for="zip" value="Zip" />
+                                <h:inputText id="zip" value="#{addressServiceBean.address.zipCode}" />
+                                
+                                <h:outputLabel for="city" value="City" />
+                                <h:inputText id="city" value="#{addressServiceBean.address.city}" />
+                                
+                                <h:outputLabel for="country" value="Country" />
+                                <h:inputText id="country" value="#{addressServiceBean.address.country}" />
+                        
+                                <h:commandButton action="#{addressServiceBean.saveAddress}" value="Submit" />
+                                <h:button outcome="index.xhtml" value="Cancel"  />
+                        </h:panelGrid>
+                </h:form>
+        
+        </h:body>
+</html>
