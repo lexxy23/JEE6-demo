@@ -12,10 +12,10 @@
   <inceptionYear>2010</inceptionYear>
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
-    <licenseHeaderTemplate>/oss/unlicense-header.txt</licenseHeaderTemplate>
     <minJavaVersion>1.6</minJavaVersion>
     <siteProjectName>jee6Demo</siteProjectName>
     <issueTrackerId>JEE6</issueTrackerId>
+    <license.id>unlicense</license.id>
   </properties>
   <scm>
     <connection>scm:git:git://github.com/lexxy23/JEE6-demo.git</connection>
@@ -41,6 +41,8 @@
     <module>api</module>
     <module>persistence</module>
     <module>remoting</module>
+    <module>rs</module>
+    <module>notify</module>
   </modules>
   <dependencyManagement>
     <dependencies>
@@ -55,7 +57,11 @@
   <parent>
     <groupId>ds2.base.oss</groupId>
     <artifactId>jee-base</artifactId>
+<<<<<<< HEAD
     <version>0.53</version>
+=======
+    <version>0.56</version>
+>>>>>>> dddee75ca0646473d41da104a86257d87391a8dc
   </parent>
   <issueManagement>
     <system>github</system>

@@ -1,3 +1,8 @@
-/.project
-/.settings
-/target
+.project
+.settings
+target
+.classpath
+.checkstyle
+/persistence/nbproject/
+/ejb/nbproject/
+/rs/nbproject/

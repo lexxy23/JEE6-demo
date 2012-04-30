@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>ext.demo.jee6</groupId>
+    <artifactId>jee6-project</artifactId>
+    <version>0.0.4-SNAPSHOT</version>
+  </parent>
+  <name>JD JEE6 Notify Webfragment</name>
+  <artifactId>jee6-notify-endpoint</artifactId>
+  <packaging>jar</packaging>
+  <dependencies>
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-web-api</artifactId>
+    </dependency>
+  </dependencies>
+</project>
