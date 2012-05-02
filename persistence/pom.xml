@@ -16,8 +16,8 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>javax</groupId>
-      <artifactId>javaee-api</artifactId>
+      <groupId>org.apache.bval</groupId>
+      <artifactId>bval-jsr303</artifactId>
     </dependency>
     <dependency>
       <groupId>org.hibernate</groupId>
@@ -31,6 +31,18 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-jdk14</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>javax.validation</groupId>
+      <artifactId>validation-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
     </dependency>
   </dependencies>
   <build>
