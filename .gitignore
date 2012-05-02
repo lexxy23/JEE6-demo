@@ -3,7 +3,6 @@
 target
 .classpath
 .checkstyle
-/persistence/nbproject/
-/ejb/nbproject/
-/rs/nbproject/
 *.versionsBackup
+nb-configuration.xml
+nbproject
