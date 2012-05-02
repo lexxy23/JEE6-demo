@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
@@ -46,6 +46,7 @@
       <groupId>ext.demo.jee6</groupId>
       <artifactId>jee6-ejb-cdi-interceptor</artifactId>
       <version>0.0.4-SNAPSHOT</version>
+      <type>ejb</type>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -82,33 +83,6 @@
       <version>0.0.4-SNAPSHOT</version>
       <type>ejb</type>
       <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>ext.demo.jee6</groupId>
-      <artifactId>jee6-webapp</artifactId>
-      <version>0.0.4-SNAPSHOT</version>
-      <type>war</type>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>ext.demo.jee6</groupId>
-      <artifactId>jee6-remoting</artifactId>
-      <version>0.0.4-SNAPSHOT</version>
-      <type>ejb</type>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>ext.demo.jee6</groupId>
-      <artifactId>jee6-ejb31</artifactId>
-      <version>0.0.4-SNAPSHOT</version>
-      <type>ejb</type>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>jee6-rs-v1</artifactId>
-      <version>${project.version}</version>
-      <type>war</type>
     </dependency>
   </dependencies>
   <properties>

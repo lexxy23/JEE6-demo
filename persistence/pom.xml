@@ -15,6 +15,12 @@
       <version>0.0.4-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
+     <dependency>
+      <groupId>ext.demo.jee6</groupId>
+      <artifactId>jee6-interceptors</artifactId>
+      <version>0.0.4-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
     <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-api</artifactId>
@@ -47,7 +53,7 @@
           <clientExcludes>
             <clientExclude>ext/demo/jee6/jpa/impl/**</clientExclude>
           </clientExcludes>
-          <generateClient>false</generateClient>
+          <generateClient>true</generateClient>
         </configuration>
       </plugin>
     </plugins>

@@ -30,6 +30,8 @@
 package ext.demo.jee6.jpa.api;
 
 
+import java.util.List;
+
 import javax.ejb.Local;
 
 import ext.demo.jee6.api.Persistable;
@@ -78,4 +80,6 @@ public interface PersistenceService {
      * @return  the updated entity
      */
     <E extends Persistable> E updateEntity(E e);
+    
+//    List<? extends Persistable> findAll(Class<? extends Persistable> c);
 }

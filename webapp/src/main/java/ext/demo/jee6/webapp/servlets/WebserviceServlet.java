@@ -64,7 +64,7 @@ public class WebserviceServlet implements AddressRemoteService {
     }
 
     @Override
-    public AddressXml createEntry(String arg0, String arg1, String arg2, String arg3, String arg4, Country arg5) {
+    public AddressXml createEntry(String arg0, String arg1, String arg2, String arg3, String arg4, String arg5) {
         return svc.createEntry(arg0, arg1, arg2, arg3, arg4, arg5);
     }
 

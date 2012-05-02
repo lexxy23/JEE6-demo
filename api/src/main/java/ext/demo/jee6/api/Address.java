@@ -76,5 +76,5 @@ public interface Address extends Persistable {
      *
      * @return  the country
      */
-    Country getCountry();
+    String getCountry();
 }

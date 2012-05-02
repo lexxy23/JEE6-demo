@@ -80,7 +80,7 @@ public class AddressEntity implements Address {
         length = 5
     )
     @NotNull
-    private Country country;
+    private String country;
 
     /**
      * The city name.
@@ -141,16 +141,26 @@ public class AddressEntity implements Address {
 
     /**
      * Inits the empty address.
+     *
      */
-    public AddressEntity() {
-        // nothing special to do
+    public AddressEntity () {
+    	
+    }
+    
+    public AddressEntity(String fn, String sn, String street, String city, String zip, String country) {
+        this.forename = fn;
+        this.surename = sn;
+        this.city = city;
+        this.zipCode =zip;
+        this.country = country;
+        this.street = street;
     }
 
     public void setCity(String city) {
         this.city = city;
     }
 
-    public void setCountry(Country country) {
+    public void setCountry(String country) {
         this.country = country;
     }
 
@@ -174,7 +184,7 @@ public class AddressEntity implements Address {
      * @return  the id
      */
     @Override
-    public synchronized long getId() {
+    public synchronized Long getId() {
         return id;
     }
 
@@ -204,12 +214,12 @@ public class AddressEntity implements Address {
     }
 
     @Override
-    public Country getCountry() {
+    public String getCountry() {
         return country;
     }
 
     @Override
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -150,4 +150,15 @@ public class PersistenceServiceBean implements PersistenceService {
         }
         return em.merge(e);
     }
+    
+//    @Override
+//    public List<? extends Persistable> findAll(Class<? extends Persistable> c) {
+//    	List<? extends Persistable> rc = null;
+//        try {
+//            rc = em.createNamedQuery("Address.getAll", c).getResultList();
+//        } catch (EntityNotFoundException e) {
+//            LOG.info("No entity found!");
+//        } 
+//        return rc;
+//    }
 }

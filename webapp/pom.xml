@@ -57,6 +57,12 @@
       <version>0.0.4-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>ext.demo.jee6</groupId>
+      <artifactId>jee6-persistence</artifactId>
+      <version>0.0.4-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
   <properties>
     <netbeans.hint.deploy.server>gfv3ee6</netbeans.hint.deploy.server>

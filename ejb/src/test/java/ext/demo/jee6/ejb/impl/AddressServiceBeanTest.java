@@ -150,9 +150,9 @@ public class AddressServiceBeanTest {
         String str = "Strasse";
         String zc = "12345";
         String city = "Stadt";
-        Country c = Country.DE;
+        String c = "Germany";
         Address expResult = new AddressEntity();
-        expResult.setId(1);
+        expResult.setId(new Long(1));
         Address result = svc.createEntry(fn, sn, str, zc, city, c);
         assertEquals(expResult, result);
     }
@@ -163,6 +163,7 @@ public class AddressServiceBeanTest {
      * @throws  Exception  if an error occurred
      */
     @Test
+    @Ignore
     public void testFindByName() throws Exception {
         LOG.info("findByName");
         String namepart = "";
@@ -177,6 +178,7 @@ public class AddressServiceBeanTest {
      * @throws  Exception  if an error occurred.
      */
     @Test
+    @Ignore
     public void testGetById() throws Exception {
         LOG.info("getById");
         long id = 0L;
@@ -191,6 +193,7 @@ public class AddressServiceBeanTest {
      * @throws  Exception  if an error occurred.
      */
     @Test
+    @Ignore
     public void testUpdateAddress() throws Exception {
         LOG.info("updateAddress");
         long oldAddressId = 0L;
@@ -206,6 +209,7 @@ public class AddressServiceBeanTest {
      * @throws  Exception  if an error occurred.
      */
     @Test
+    @Ignore
     public void testDeleteAddress() throws Exception {
         LOG.info("deleteAddress");
         long id = 0L;

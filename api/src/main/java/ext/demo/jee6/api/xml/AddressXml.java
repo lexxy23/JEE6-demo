@@ -64,7 +64,7 @@ public class AddressXml implements Address {
      * The country.
      */
     @XmlElement
-    private Country country;
+    private String country;
     
     /**
      * The forename of the user.
@@ -127,7 +127,7 @@ public class AddressXml implements Address {
      */
     @Override
     @XmlTransient
-    public Country getCountry() {
+    public String getCountry() {
         return country;
     }
     
@@ -145,7 +145,7 @@ public class AddressXml implements Address {
      */
     @Override
     @XmlTransient
-    public long getId() {
+    public Long getId() {
         return id;
     }
     
@@ -197,7 +197,7 @@ public class AddressXml implements Address {
      *            the id to set
      */
     @Override
-    public synchronized void setId(final long id) {
+    public synchronized void setId(final Long id) {
         this.id = id;
     }
     

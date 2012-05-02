@@ -60,7 +60,7 @@ public interface AddressService {
      * @return the address
      */
     Address createEntry(String fn, String sn, String str, String zc,
-        String city, Country c);
+        String city, String c);
     
     /**
      * Deletes the addressbook entry with the given id.
@@ -80,12 +80,7 @@ public interface AddressService {
      */
     List<Address> findByName(String namepart);
     
-    /**
-     * Returns all known addresses.
-     * 
-     * @return the known addresses
-     */
-    List<Address> getAllAddresses();
+   
     
     /**
      * Returns the address with the given id.
@@ -108,4 +103,8 @@ public interface AddressService {
      * @return the updated address
      */
     Address updateAddress(long oldAddressId, Address newAddress);
+    
+    List<Address> findAllAddresses();
+    
+    String sayHello();
 }

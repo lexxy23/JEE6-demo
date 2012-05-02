@@ -40,16 +40,16 @@ import javax.ejb.DependsOn;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 import ext.demo.jee6.api.Address;
 import ext.demo.jee6.api.AddressService;
-import ext.demo.jee6.api.Country;
 import ext.demo.jee6.jpa.api.PersistenceService;
 import ext.demo.jee6.jpa.model.AddressEntity;
-import javax.inject.Inject;
 
 /**
  * Implementation for the AddressService.
@@ -66,9 +66,12 @@ public class AddressServiceBean implements AddressService {
 
     /**
      * A logger.
-     */
+     */ 
     private static final Logger LOG = Logger.getLogger(AddressServiceBean.class.getName());
 
+    @PersistenceContext(unitName = "jee6Test") 
+    private EntityManager em;
+    
     /**
      * The environment to use.
      */
@@ -101,10 +104,14 @@ public class AddressServiceBean implements AddressService {
             String sn, @NotNull
             String str, @NotNull
             String zc, @NotNull
-            String city, Country c) {
-      AddressEntity e=new AddressEntity();
-      Address a=svc.store(e);
-        return a;
+            String city, String c) {
+    	LOG.info("Creating new entry: " + fn + "|" + sn);
+    	AddressEntity e = new AddressEntity(fn, sn, str, city, zc, c);
+    	Address a = svc.store(e);
+      
+    	LOG.info("Stored new address: " + a);
+      
+    	return a;
     }
 
     /**
@@ -113,7 +120,6 @@ public class AddressServiceBean implements AddressService {
     @Override
     public List<Address> findByName(@NotNull
             String namepart) {
-        // TODO Auto-generated method stub
         return null;
     }
 
@@ -124,8 +130,7 @@ public class AddressServiceBean implements AddressService {
     public Address getById(@Max(100)
             @Min(0)
             long id) {
-        // TODO Auto-generated method stub
-        return null;
+        return svc.getById(Address.class, id);
     }
 
     /**
@@ -134,8 +139,7 @@ public class AddressServiceBean implements AddressService {
     @Override
     public Address updateAddress(long oldAddressId, @NotNull
             Address newAddress) {
-        // TODO Auto-generated method stub
-        return null;
+        return svc.updateEntity(newAddress);
     }
 
     /**
@@ -143,11 +147,24 @@ public class AddressServiceBean implements AddressService {
      */
     @Override
     public void deleteAddress(long id) {
-        // TODO Auto-generated method stub
+        svc.delete(svc.getById(Address.class, id));
     }
 
-  @Override
-  public List<Address> getAllAddresses() {
-    return null;
-  }
+//	@Override
+//	public List<? extends Persistable> getAllAddresses() {
+//		return svc.findAll(Address.class);
+//	}
+
+  
+    public List<Address> findAllAddresses() {
+    	LOG.info("AddressServiceBean.findAllAddresses:");
+    	return em.createNamedQuery("Address.getAll", Address.class).getResultList();
+    }
+
+	@Override
+	public String sayHello() {
+		LOG.info("HELLO WORLD");
+		
+		return "HELLO WORLD";
+	}
 }

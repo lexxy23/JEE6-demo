@@ -56,7 +56,7 @@ public interface AddressRemoteService {
      *
      * @return  the generated address, or null if an error occurred.
      */
-    AddressXml createEntry(String fn, String sn, String str, String zc, String city, Country c);
+    AddressXml createEntry(String fn, String sn, String str, String zc, String city, String c);
 
     /**
      * Returns the address by the given id.

@@ -30,6 +30,7 @@
 package ext.demo.jee6.ejb.impl;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.ejb.Singleton;
@@ -47,7 +48,7 @@ public class PersistenceTestBean implements PersistenceService {
     
     private Map<String, Persistable> m = null;
     private long seqId;
-    
+     
     /**
      */
     public PersistenceTestBean() {
@@ -121,4 +122,15 @@ public class PersistenceTestBean implements PersistenceService {
         // TODO Auto-generated method stub
         return null;
     }
+
+//	@Override
+//	public List<? extends Persistable> findAll(Class<? extends Persistable> c) {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
+
+	
+	
+
+
 }

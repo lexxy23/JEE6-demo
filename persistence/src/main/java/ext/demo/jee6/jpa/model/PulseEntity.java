@@ -104,12 +104,12 @@ public class PulseEntity implements Persistable {
      * @return  the id
      */
     @Override
-    public synchronized long getId() {
+    public synchronized Long getId() {
         return id;
     }
 
     @Override
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

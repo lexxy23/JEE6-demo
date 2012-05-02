@@ -82,7 +82,7 @@ public class AddressRemoteServiceBean implements AddressRemoteService {
             @WebParam(name = "street") String str,
             @WebParam(name = "zipcode") String zc,
             @WebParam(name = "city") String city,
-            @WebParam(name = "country") Country c) {
+            @WebParam(name = "country") String c) {
         Address a = svc.createEntry(fn, sn, str, zc, city, c);
         if (a == null) {
             return null;

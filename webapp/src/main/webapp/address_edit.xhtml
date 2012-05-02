@@ -4,6 +4,10 @@
         xmlns:h="http://java.sun.com/jsf/html"
         xmlns:f="http://java.sun.com/jsf/core">
         
+       <f:metadata>
+                <!-- f:viewParam name="address" value="#{addressEdit.address}" converter="#{addressConvertor}" /-->
+                <!-- f:event listener="#{addressEdit.preRenderView()}" type="preRenderView"/-->
+        </f:metadata>
        
         
         <h:head>
@@ -11,36 +15,33 @@
         </h:head>
         
         <h:body>
-                
-        
-                
                 <h:form>
-                        
+                	
                         <h:panelGrid columns="2">
                                 <f:facet name="header">Address</f:facet>
                                 
-                                <h:outputLabel value="Id" rendered="#{!empty addressServiceBean.address.id}" />
-                                <h:outputLabel value="#{addressServiceBean.address.id}" rendered="#{!empty addressServiceBean.address.id}" />
+                                <h:outputLabel value="Id" rendered="#{!empty addressEdit.address.id}" />
+                                <h:outputLabel value="#{addressEdit.address.id}" rendered="#{!empty addressEdit.address.id}" />
                                         
                                 <h:outputLabel for="firstName" value="First name" />
-                                <h:inputText id="firstName" value="#{addressServiceBean.address.forename}" label="First name" />
+                                <h:inputText id="firstName" value="#{addressEdit.address.forename}" label="First name" />
                                 
                                 <h:outputLabel for="lastName" value="Last name" />
-                                <h:inputText id="lastName" value="#{addressServiceBean.address.surename}" label="Last name"  />
+                                <h:inputText id="lastName" value="#{addressEdit.address.surename}" label="Last name"  />
                                 
                                 <h:outputLabel for="street" value="Street" />
-                                <h:inputText id="street" value="#{addressServiceBean.address.street}" label="Street" />
+                                <h:inputText id="street" value="#{addressEdit.address.street}" label="Street" />
                                 
                                 <h:outputLabel for="zip" value="Zip" />
-                                <h:inputText id="zip" value="#{addressServiceBean.address.zipCode}" />
+                                <h:inputText id="zip" value="#{addressEdit.address.zipCode}" />
                                 
                                 <h:outputLabel for="city" value="City" />
-                                <h:inputText id="city" value="#{addressServiceBean.address.city}" />
+                                <h:inputText id="city" value="#{addressEdit.address.city}" />
                                 
                                 <h:outputLabel for="country" value="Country" />
-                                <h:inputText id="country" value="#{addressServiceBean.address.country}" />
+                                <h:inputText id="country" value="#{addressEdit.address.country}" />
                         
-                                <h:commandButton action="#{addressServiceBean.saveAddress}" value="Submit" />
+                                <h:commandButton action="#{addressEdit.store}" value="Persist!" />
                                 <h:button outcome="index.xhtml" value="Cancel"  />
                         </h:panelGrid>
                 </h:form>
