@@ -64,7 +64,7 @@ public class AddressBookResourceImpl implements AddressbookResource {
      */
     @Override
     public List<AddressXml> getAllAddresses() {
-        List<Address> al = svc.getAllAddresses();
+        List<Address> al = svc.findAllAddresses();
         if (al == null) {
             return null;
         }

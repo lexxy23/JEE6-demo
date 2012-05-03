@@ -57,11 +57,7 @@
   <parent>
     <groupId>ds2.base.oss</groupId>
     <artifactId>jee-base</artifactId>
-<<<<<<< HEAD
-    <version>0.53</version>
-=======
     <version>0.56</version>
->>>>>>> dddee75ca0646473d41da104a86257d87391a8dc
   </parent>
   <issueManagement>
     <system>github</system>

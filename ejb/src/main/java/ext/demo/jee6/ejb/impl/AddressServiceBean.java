@@ -39,6 +39,7 @@ import javax.annotation.Resource;
 import javax.ejb.DependsOn;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import javax.inject.Inject;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -77,7 +78,8 @@ public class AddressServiceBean implements AddressService {
      */
     @Resource(mappedName = "jee6/env")
     private String env;
-    @EJB
+    
+    @Inject
     private PersistenceService svc;
 
     /**
