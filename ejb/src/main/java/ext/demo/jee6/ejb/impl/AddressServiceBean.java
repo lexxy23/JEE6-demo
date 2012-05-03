@@ -24,13 +24,16 @@
  *
  * For more information, please refer to <http://unlicense.org/>
  */
-/**
- *
- */
 package ext.demo.jee6.ejb.impl;
 
+import ext.demo.jee6.api.Address;
+import ext.demo.jee6.api.AddressService;
+import ext.demo.jee6.api.Country;
+import ext.demo.jee6.jpa.api.PersistenceService;
+import ext.demo.jee6.jpa.model.AddressEntity;
 
 import java.util.List;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javax.annotation.PostConstruct;
@@ -43,13 +46,6 @@ import javax.ejb.Stateless;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
-
-import ext.demo.jee6.api.Address;
-import ext.demo.jee6.api.AddressService;
-import ext.demo.jee6.api.Country;
-import ext.demo.jee6.jpa.api.PersistenceService;
-import ext.demo.jee6.jpa.model.AddressEntity;
-import javax.inject.Inject;
 
 /**
  * Implementation for the AddressService.
@@ -89,7 +85,7 @@ public class AddressServiceBean implements AddressService {
      */
     @PostConstruct
     public void startup() {
-        LOG.info("Using env " + env);
+        LOG.log(Level.INFO, "Using env {0}", env);
     }
 
     /**
@@ -102,8 +98,8 @@ public class AddressServiceBean implements AddressService {
             String str, @NotNull
             String zc, @NotNull
             String city, Country c) {
-      AddressEntity e=new AddressEntity();
-      Address a=svc.store(e);
+        AddressEntity e = new AddressEntity();
+        Address a = svc.store(e);
         return a;
     }
 
@@ -113,7 +109,6 @@ public class AddressServiceBean implements AddressService {
     @Override
     public List<Address> findByName(@NotNull
             String namepart) {
-        // TODO Auto-generated method stub
         return null;
     }
 
@@ -124,8 +119,7 @@ public class AddressServiceBean implements AddressService {
     public Address getById(@Max(100)
             @Min(0)
             long id) {
-        // TODO Auto-generated method stub
-        return null;
+        return svc.getById(AddressEntity.class, id);
     }
 
     /**
@@ -134,8 +128,7 @@ public class AddressServiceBean implements AddressService {
     @Override
     public Address updateAddress(long oldAddressId, @NotNull
             Address newAddress) {
-        // TODO Auto-generated method stub
-        return null;
+        return svc.updateEntity(newAddress);
     }
 
     /**
@@ -146,8 +139,8 @@ public class AddressServiceBean implements AddressService {
         // TODO Auto-generated method stub
     }
 
-  @Override
-  public List<Address> getAllAddresses() {
-    return null;
-  }
+    @Override
+    public List<Address> getAllAddresses() {
+        return null;
+    }
 }

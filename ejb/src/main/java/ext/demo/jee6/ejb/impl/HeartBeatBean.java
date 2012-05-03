@@ -94,13 +94,13 @@ public class HeartBeatBean {
     /**
      * Prints out a info message on every minute.
      */
-    @Schedule(
-        hour = "*",
-        minute = "*",
-        second = "*/20",
-        info = TIMER_NAME,
-        persistent = false
-    )
+//    @Schedule(
+//        hour = "*",
+//        minute = "*",
+//        second = "*/20",
+//        info = TIMER_NAME,
+//        persistent = false
+//    )
     public void beat() {
         LOG.info("Heart still going on: " + svc.pulse());
     }

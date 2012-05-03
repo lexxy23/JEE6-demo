@@ -26,6 +26,10 @@
  */
 package ext.demo.jee6.webapp.servlets;
 
+import ext.demo.jee6.api.AddressRemoteService;
+import ext.demo.jee6.api.Country;
+import ext.demo.jee6.api.annotations.LogCall;
+import ext.demo.jee6.api.xml.AddressXml;
 
 import java.util.List;
 
@@ -35,16 +39,12 @@ import javax.jws.WebService;
 
 import javax.servlet.annotation.WebServlet;
 
-import ext.demo.jee6.api.AddressRemoteService;
-import ext.demo.jee6.api.Country;
-import ext.demo.jee6.api.annotations.LogCall;
-import ext.demo.jee6.api.xml.AddressXml;
-
 /**
  * @author  dstrauss
  */
 @WebServlet(
     name = "ws1",
+    description = "A class, annotated as servlet, used as a webservice",
     urlPatterns = { "/ws1" }
 )
 @WebService(name = "n1")

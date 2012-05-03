@@ -24,10 +24,6 @@
  *
  * For more information, please refer to <http://unlicense.org/>
  */
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package ext.demo.jee6.jpa.impl;
 
 

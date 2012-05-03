@@ -24,9 +24,6 @@
  *
  * For more information, please refer to <http://unlicense.org/>
  */
-/**
- *
- */
 package ext.demo.jee6.jpa.impl;
 
 
