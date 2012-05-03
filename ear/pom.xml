@@ -89,6 +89,16 @@
       <version>${project.version}</version>
       <type>war</type>
     </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-entitymanager</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
   <properties>
     <netbeans.hint.deploy.server>gfv3ee6</netbeans.hint.deploy.server>
