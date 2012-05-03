@@ -1,20 +1,20 @@
-package backing;
+package ext.demo.jee6.jpa;
 
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
+import javax.inject.Inject;
 
 import ext.demo.jee6.api.Address;
 import ext.demo.jee6.api.AddressService;
+import ext.demo.jee6.jpa.model.AddressEntity;
 
 @ManagedBean
 public class AddressConvertor implements Converter {
 
-
-	
-	        @EJB
+	        @Inject
 	        private AddressService addresses;
 	       
 	        @Override

@@ -76,7 +76,7 @@ public class AddressServiceBean implements AddressService {
     /**
      * The environment to use.
      */
-    @Resource(mappedName = "jee6/env")
+    //@Resource(mappedName = "jee6/env")
     private String env;
     
     @Inject

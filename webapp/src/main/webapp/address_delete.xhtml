@@ -9,10 +9,15 @@
         </h:head>
         
         <h:body>
+        		<f:metadata>
+                	<f:viewParam name="address" value="#{addressDelete.address}" converter="#{addressConvertor}" />
+        		</f:metadata>
+        		
+        
                 <h:form>
-                        Do you want to delete #{addressDelete.address.forename} #{addressDelete.address.surename}?<br />
-                        <h:commandButton action="#{addressDelete.delete}" value="Delete" />
-                        <h:commandButton action="#{addressDelete.cancel}" value="Cancel" />
+                        Do you want to delete the entry '#{addressDelete.address.forename} #{addressDelete.address.surename}'?<br />
+                        <h:commandButton action="#{addressDelete.delete}" value="Yes, delete!" />
+                        <h:commandButton action="#{addressDelete.cancel}" value="No, keep the entry!" />
                 </h:form>
         </h:body>
 </html>

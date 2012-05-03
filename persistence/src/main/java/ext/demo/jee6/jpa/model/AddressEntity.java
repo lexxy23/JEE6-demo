@@ -27,7 +27,6 @@
 package ext.demo.jee6.jpa.model;
 
 import ext.demo.jee6.api.Address;
-import ext.demo.jee6.api.Country;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

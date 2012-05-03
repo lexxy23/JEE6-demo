@@ -3,13 +3,11 @@ package backing;
 import static util.Messages.addFlashMessage;
 
 import java.io.Serializable;
+import java.util.List;
 import java.util.logging.Logger;
 
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
 import javax.inject.Inject;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
 
 import ext.demo.jee6.api.Address;
 import ext.demo.jee6.api.AddressService;
@@ -25,25 +23,22 @@ public class AddressEdit implements Serializable {
 
 	private static final Logger LOG = Logger.getLogger(AddressEdit.class.getName());
 	  
-//	private List<Address> addresses;
 	private Address address = new AddressEntity();
     
     @Inject
     private AddressService addressBean;
     
     public void preRenderView() {
+    	LOG.info("preRenderView: ");
         if (address == null) {
-        	LOG.info("Instantiating new address entity");
         	address = new AddressEntity();
-        	LOG.info("Instantiating new address entity: " + address.toString());
         }
     }
-
     
-//    public List<Address> getAddresses() {
-//    	LOG.info("getAddresses: " + addresses.size());
-//        return addresses;
-//    }
+    public List<Address> getAllAddresses() {
+    	
+    	return addressBean.findAllAddresses();
+    }
     
     public Address getAddress() {
     	return this.address;
@@ -54,35 +49,38 @@ public class AddressEdit implements Serializable {
     }
     
     public String store() {
-//    	try {
-//			addressBean = (AddressService)new InitialContext().lookup("java:global/AddressService");
-//			LOG.info("Looked up bean: "+ addressBean);
-//		} catch (NamingException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
     	LOG.info("Saving address: " + address);
-    	if (address.getId() != null) {
+    	if (address.getId() != null && address.getId().longValue() != 0) {
     		LOG.info("Updating old entry: " + address.toString());
-            addressBean.updateAddress(address.getId(), address);
+            Address oldAdress = addressBean.updateAddress(address.getId(), address);
+            
+            addFlashMessage("Address" + oldAdress.getId() + " updated");
     	} 
     	else {
     		LOG.info("Creating new entry: " + address.toString());
-    		LOG.info(addressBean.sayHello());
-    		addressBean.createEntry(address.getForename(), address.getSurename(), address.getStreet(), 
+    		Address newAddress = addressBean.createEntry(address.getForename(), address.getSurename(), address.getStreet(), 
     				address.getZipCode(), address.getCity(), address.getCountry());
+    		
+    		addFlashMessage("Address" + newAddress.getId() + " created");
     	}
     
-    	addFlashMessage("Address" + address.getId() + " saved");
+    	
     
     	return "index.jsf?faces-redirect=true";
     }
     
-    public Address updateAddress(Address address) {
-    	return addressBean.updateAddress(address.getId(), address);
+//    public Address updateAddress(Address address) {
+//    	return addressBean.updateAddress(address.getId(), address);
+//    }
+    
+    public String deleteAddress() {
+    	addressBean.deleteAddress(address.getId());
+    	return "index?faces-redirect=true";
     }
     
-    public void deleteAddress(Address address) {
-    	addressBean.deleteAddress(address.getId());
+
+    public String cancel() {
+            return "index?faces-redirect=true";
     }
+
 }
