@@ -13,6 +13,7 @@ import javax.naming.NamingException;
 
 import ext.demo.jee6.api.Address;
 import ext.demo.jee6.api.AddressService;
+import ext.demo.jee6.ejb.impl.AddressServiceBean2;
 import ext.demo.jee6.jpa.model.AddressEntity;
 
 @ManagedBean(name="addressEdit")
@@ -29,7 +30,7 @@ public class AddressEdit implements Serializable {
 	private Address address = new AddressEntity();
     
     @Inject
-    private AddressService addressBean;
+    private AddressServiceBean2 addressBean;
     
     public void preRenderView() {
         if (address == null) {
@@ -54,13 +55,13 @@ public class AddressEdit implements Serializable {
     }
     
     public String store() {
-    	try {
-			addressBean = (AddressService)new InitialContext().lookup("java:global/AddressService");
-			LOG.info("Looked up bean: "+ addressBean);
-		} catch (NamingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//    	try {
+//			addressBean = (AddressService)new InitialContext().lookup("java:global/AddressService");
+//			LOG.info("Looked up bean: "+ addressBean);
+//		} catch (NamingException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
     	LOG.info("Saving address: " + address);
     	if (address.getId() != null) {
     		LOG.info("Updating old entry: " + address.toString());
